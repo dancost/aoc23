@@ -1,5 +1,5 @@
 # https://adventofcode.com/2023/day/1
-with open("d1p1_input.txt") as in_file:
+with open("d1_input.txt") as in_file:
     input_strings = [line.strip() for line in in_file]
 
 
@@ -31,4 +31,3 @@ def calculate_calibration_values(document):
 
 
 result = calculate_calibration_values(input_strings)
-print(result)
