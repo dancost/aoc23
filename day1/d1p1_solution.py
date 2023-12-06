@@ -17,9 +17,9 @@ with open("d1_input.txt") as in_file:
 # print(result)
 
 
-def calculate_calibration_values(document):
+def calculate_calibration_values(strings):
     total_sum = 0
-    for line in document:
+    for line in strings:
         first_digit = next((char for char in line if char.isdigit()), None)
         last_digit = next((char for char in reversed(line) if char.isdigit()), None)
 
@@ -31,3 +31,4 @@ def calculate_calibration_values(document):
 
 
 result = calculate_calibration_values(input_strings)
+print(result)
