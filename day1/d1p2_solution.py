@@ -15,9 +15,8 @@ word_to_digit = {"one": "1",
 # this is crazy but it beats using regex
 def convert_word_to_digit(line):
     for word, digit in word_to_digit.items():
-        if word in line:
-            # duplicate first and last letters to remove overlapping strings case
-            line = line.replace(word, word[0] + word + word[-1])
+        # duplicate first and last letters to remove overlapping strings case
+        line = line.replace(word, word[0] + word + word[-1])
         line = line.replace(word, digit)
 
     return line
