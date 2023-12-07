@@ -1,3 +1,5 @@
+# https://adventofcode.com/2023/day/1
+
 with open("d1_input.txt") as in_file:
     input_strings = [line.strip() for line in in_file]
 
